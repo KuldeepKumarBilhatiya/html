@@ -14,20 +14,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="app.js"></script>
-    <script>
-      $(document).ready(function () {
-        var pageUrl = "Welcome.php";
-        var jsObject = {name:"Kuldeep Kumar", age:"30"};
-        $.ajax({
-            type : 'POST',
-            url : pageUrl,
-            data : jsObject,
-            success : function(json) {
-                var obj = jQuery.parseJSON(json);
-                
-            }
-        });
-      });
-    </script>
   </body>
 </html>
